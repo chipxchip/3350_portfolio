@@ -1,0 +1,93 @@
+.project-detail-back {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--teal-dark);
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.project-detail-head {
+  max-width: 70ch;
+  margin-bottom: 48px;
+}
+
+.project-detail-head h1 {
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+  margin: 4px 0 12px;
+}
+
+.project-detail-tagline {
+  color: var(--slate);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.project-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-detail-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.project-detail-body {
+  display: grid;
+  gap: 36px;
+  max-width: 70ch;
+}
+
+.project-detail-body h2 {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+.project-detail-body p {
+  color: var(--slate);
+}
+
+.project-detail-list {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.project-detail-list li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--slate);
+}
+
+.project-detail-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--teal);
+}
+
+.project-detail-meta {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.project-detail-meta > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-detail-meta-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate-light);
+}

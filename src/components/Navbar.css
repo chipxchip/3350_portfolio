@@ -1,0 +1,103 @@
+.navbar {
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  gap: 24px;
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.navbar-brand-bracket {
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.navbar-tabs {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.navbar-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  padding: 0 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 2px solid transparent;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
+  white-space: nowrap;
+}
+
+.navbar-tab:hover {
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.navbar-tab-active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid var(--teal);
+}
+
+.navbar-tab-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.navbar-tab-active .navbar-tab-dot {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .navbar-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 0;
+  }
+
+  .navbar-tabs {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar-tab {
+    padding: 10px 8px;
+    font-size: 0.72rem;
+  }
+}

@@ -1,0 +1,24 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 28px 0;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-comment {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--slate-light);
+}
+
+.footer-copy {
+  font-size: 0.82rem;
+  color: var(--slate);
+}
